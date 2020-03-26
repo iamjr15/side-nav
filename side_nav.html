@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/side_nav.css'>
+</head>
+<body>
+
+    <div class="nav">
+        
+        <div class="nav-button" onclick="expand()">
+
+        </div>
+        <div class="nav-bar">
+
+        </div>
+        <div id="ell" class="ell">
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#">Explore</a>
+                    </li>
+                    <li>
+                        <a href="#">Study</a>
+                    </li>
+                </ul>
+            </div>
+    </div>    
+
+    <div class="content" onclick="expand()">
+        <img src="">
+    </div>
+
+    <script>
+        var x = document.getElementById('ell');
+        function expand(){
+            if (x.style.width == '24%'){
+                x.style.width = '0';
+            }
+            else{
+                x.style.width = '24%';
+            }
+        }
+    </script>
+    
+
+</body>
+</html>

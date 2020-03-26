@@ -1,0 +1,73 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+html, body
+{
+    background-color: azure;
+    margin: 0;
+    height: 100%;
+}
+.nav .nav-bar{
+    position: fixed;
+    width: 100vw;
+    height: 50px;
+    background: linear-gradient(180deg,  #202020, transparent);
+    z-index: 0;
+}
+.nav .nav-button
+{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background-color: brown;
+    z-index: 1;
+}
+.nav .nav-button:before
+{
+    content: '';
+    width: 40px;
+    height: 6px;
+    background-color: aliceblue;
+    position: absolute;
+    top: 6px;
+    margin: 4px;
+}
+.nav .nav-button:after
+{
+    content: '';
+    width: 40px;
+    height: 6px;
+    background-color: aliceblue;
+    bottom: 6px;
+    margin: 4px;
+}
+.nav .ell li a
+{
+    margin: 10px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #f00;
+}
+.nav .ell li
+{
+    margin: 20px;
+    list-style: none;
+}
+.nav .ell
+{
+    position: fixed;
+    top: 50px;
+    overflow: hidden;
+    width: 0;
+    height: 100vh;
+    background: #202020;
+    transition: 0.2s;
+}
+.content
+{
+    width: cover;
+    height: 500px;
+    background: #f4ff54;
+}
